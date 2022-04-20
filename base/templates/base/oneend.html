@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="snap-start grid place-items-center min-h-screen bg-gradient-to-t from-blue-700 to-indigo-900 p-5">
+    <div class="scale-150 bg-white w-64 shadow-2xl rounded hover:shadow-lg transition duration-200 transform hover:-translate-y-2 overflow-hidden my-5">
+    <img src="https://cdn.mr-fothergills.co.uk/product-images/op/z/33182az.jpg" class="h-48 w-full object-cover object-center">
+    <div class="w-full flex flex-col">
+      <h3 class="font-bold text-gray-700 w-full text-center mt-1 cursor-default text-lg">סיימתם את השאלון</h3>
+      <p class="p-3 pt-1 cursor-default text-center">תודה לכם על העזרה לפרוייקט</p>
+      <a href="{% url 'home' %}" class=" bg-blue-500 hover:bg-blue-600 text-white text-center px-3 py-1 m-2 focus:outline-none rounded">חזרה לדף הבית</a>
+    </div>
+  </div>
+</div>
+{% endblock content %}

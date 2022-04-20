@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="snap-start grid place-items-center min-h-screen bg-gradient-to-t from-blue-700 to-indigo-900 p-5">
+    <div>
+      <h1 class="animate-wiggle text-4xl sm:text-5xl md:text-7xl font-bold text-gray-200 mb-40 text-center">?מה אתה מעדיף</h1>
+      <section class="grid grid-cols-2 sm:grid-cols-2 gap-32">
+        <!-- CARD 1 -->
+      
+        <form method="POST" action="{% url 'two' two.id_n %}">
+        {% csrf_token %}
+        <button value="{{ two.f1_color }}" name="send2" type="submit" class="bg-gray-900 shadow-lg rounded p-3 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer">
+        <img class="w-full md:w-72 block rounded" src="{{ two.f1 }}" alt="" />
+        </button>
+        </form>
+        <!-- END OF CARD 1 -->
+  
+        <!-- CARD 1 -->
+        <form method="POST" action="{% url 'two' two.id_n %}">
+          {% csrf_token %}
+          <button value="{{ two.f2_color }}" name="send2" type="submit" class="bg-gray-900 shadow-lg rounded p-3 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer">
+          <img class="w-full md:w-72 block rounded" src="{{ two.f2 }}" alt="" />
+          </button>
+        </form>
+        <!-- END OF CARD 1 -->
+      </section>
+    </div>
+  </div>
+{% endblock content %}

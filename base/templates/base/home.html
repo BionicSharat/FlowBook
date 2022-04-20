@@ -1,0 +1,121 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="snap-y snap-mandatory h-screen w-screen overflow-scroll">
+
+  <div class="snap-start grid place-items-center min-h-screen bg-gradient-to-t from-indigo-900 to-black p-5">
+      <div class="px-12 mx-auto max-w-7xl">
+          <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
+              <h1 class="text-center animate-wiggle mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-200 md:text-6xl md:tracking-tight">
+                
+                  <span>פרוייקט</span> <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">הפתרון המדעי </span> <span>שיעור מדעים</span>
+              </h1>
+              <p class="text-center px-0 mb-8 text-lg text-gray-200 md:text-xl lg:px-24">
+                  איתמר פלג, אלון כרמיאל, יונתן קורצמן, מאור אלקיים
+              </p>
+              <div class=" mb-4 space-x-0 md:space-x-2 md:mb-8">
+  <a href="https://docs.google.com/document/d/1nGchSi2nU1oObeUWWnXFnJ3quVdBMiPQAQ-IJ03mC3w/edit" type="button" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-2xl px-5 py-2.5 text-center mr-2 mb-2">הורדת העבודה</a>
+  <button onclick="AdvancedCopy()" class="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:ring-[#FF9119]/50 font-medium rounded-lg text-2xl px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2"><svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="bitcoin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.1-111 248-248 248S8 392.1 8 256 119 8 256 8s248 111 248 248zm-141.7-35.33c4.937-32.1-20.19-50.74-54.55-62.57l11.15-44.7-27.21-6.781-10.85 43.52c-7.154-1.783-14.5-3.464-21.8-5.13l10.93-43.81-27.2-6.781-11.15 44.69c-5.922-1.349-11.73-2.682-17.38-4.084l.031-.14-37.53-9.37-7.239 29.06s20.19 4.627 19.76 4.913c11.02 2.751 13.01 10.04 12.68 15.82l-12.7 50.92c.76 .194 1.744 .473 2.829 .907-.907-.225-1.876-.473-2.876-.713l-17.8 71.34c-1.349 3.348-4.767 8.37-12.47 6.464 .271 .395-19.78-4.937-19.78-4.937l-13.51 31.15 35.41 8.827c6.588 1.651 13.05 3.379 19.4 5.006l-11.26 45.21 27.18 6.781 11.15-44.73a1038 1038 0 0 0 21.69 5.627l-11.11 44.52 27.21 6.781 11.26-45.13c46.4 8.781 81.3 5.239 95.99-36.73 11.84-33.79-.589-53.28-25-65.99 17.78-4.098 31.17-15.79 34.75-39.95zm-62.18 87.18c-8.41 33.79-65.31 15.52-83.75 10.94l14.94-59.9c18.45 4.603 77.6 13.72 68.81 48.96zm8.417-87.67c-7.673 30.74-55.03 15.12-70.39 11.29l13.55-54.33c15.36 3.828 64.84 10.97 56.85 43.03z"></path></svg>לתרומה בביטקוין
+  </button>            
+              </div>
+          </div>
+      </div>
+  </section>
+  </div>
+  
+  <div class="snap-start grid place-items-center min-h-screen bg-gradient-to-t from-blue-700 to-indigo-900 p-5">
+    <div>
+      <h1 class="animate-bounce text-4xl sm:text-5xl md:text-7xl font-bold text-gray-200 mb-5 text-right">בואו נתחיל</h1>
+      <section class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <!-- CARD 1 -->
+        <div class="bg-gray-900 shadow-lg rounded p-3 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer">
+          <div class="group relative">
+            <img class="w-full md:w-72 block rounded" src="https://i.ibb.co/TWB7ZT1/11111111.png" alt="" />
+            <a href="{% url 'one' 1 %}" class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+              <button class="hover:scale-105 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition">
+                <h1 class="Rubik scale-150">אם הגיל שלכם בין 1 ל12</h1>
+              </button>
+            </a>
+  
+          </div>
+          <div class="p-5">
+          </div>
+        </div>
+        <!-- END OF CARD 1 -->
+  
+              <!-- CARD 2 -->
+        <div class="bg-gray-900 shadow-lg rounded p-3 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer">
+          <div class="group relative">
+            <img class="w-full md:w-72 block rounded" src="https://i.ibb.co/SBZT239/222222.png" alt="" />
+            <a href="{% url 'two' 1 %}" class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+              <button class="hover:scale-105 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition">
+                <h1 class="Rubik scale-150">אם הגיל שלכם בין 12 ל18</h1>
+              </button>
+            </a>
+  
+          </div>
+          <div class="p-5">
+          </div>
+        </div>
+        <!-- END OF CARD 2 -->
+  
+              <!-- CARD 3 -->
+        <div class="bg-gray-900 shadow-lg rounded p-3 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer">
+          <div class="group relative">
+            <img class="w-full md:w-72 block rounded " src="https://i.ibb.co/z84Z8LW/3333333.png" alt="" />
+            <a href="{% url 'three' 1 %}" class="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+              <button class="hover:scale-105 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition">
+                <h1 class="Rubik scale-150">אם הגיל שלכם מעל 18</h1>
+              </button>
+            </a>
+  
+          </div>
+          </div>
+        <!-- END OF CARD 1 -->
+        
+      </section>
+    </div>
+  </div>
+  
+  <script>
+    function AdvancedCopy(){
+         var theText = '1234567890';
+        var hiddenCopy = document.createElement('div');
+         hiddenCopy.innerHTML = theText;
+         hiddenCopy.style.position = 'absolute';
+         hiddenCopy.style.left = '-9999px';
+              var currentRange;
+         if(document.getSelection().rangeCount > 0)
+         {
+            currentRange = document.getSelection().getRangeAt(0);
+            window.getSelection().removeRange(currentRange);
+         }
+         else
+         {
+              currentRange = false;
+         }
+     
+         document.body.appendChild(hiddenCopy);
+         var CopyRange = document.createRange();
+         CopyRange.selectNode(hiddenCopy);
+         window.getSelection().addRange(CopyRange);
+         try
+         {
+              document.execCommand('copy');
+         }
+         catch(err)
+         {
+              window.alert("Your Browser Doesn't support this! Error : " + err);
+         }
+         window.getSelection().removeRange(CopyRange);
+         document.body.removeChild(hiddenCopy);
+          if(currentRange)
+         {
+            window.getSelection().addRange(currentRange);
+         }
+    }
+    </script>
+
+
+
+{% endblock content %}
